@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "regions": ["sfo"],
   "builds": [
     { "src": "*.ts", "use": "@now/node" }
   ]
