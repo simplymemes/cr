@@ -31,7 +31,7 @@ export default async (request: NowRequest, response: NowResponse) => {
 
   let data = null
   try {
-    data = await got(url).json()
+    ({ data } = await got(url).json())
   } catch (e) {}
   
   if (data) {
